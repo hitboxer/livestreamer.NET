@@ -1,6 +1,8 @@
 # livestreamer.NET
 A little graphical user interace (GUI) for [livestreamer](https://github.com/chrippa/livestreamer)
 
+![alt text](http://puu.sh/komno/26c82ed293.png "Tab: Stream")
+
 # Description
 
 This is just a graphical user interface (GUI) for [livestreamer](https://github.com/chrippa/livestreamer) a command line interface (CLI).
