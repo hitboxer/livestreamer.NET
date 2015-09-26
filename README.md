@@ -21,5 +21,10 @@ livestreamer.NET is a little application written in [C#](https://en.wikipedia.or
 
 # Download
 
+[Here you can find a list of all recent releases.](https://github.com/hitboxer/livestreamer.NET/releases)
+
+*Please Note:* **livestreamer.NET** depends on **livestreamer**. Install **[livestreamer](https://github.com/chrippa/livestreamer)** prior to using this application or you won't be able to launch any streams. 
+
+For other requirements give the **requirement** section a look.
 
 
