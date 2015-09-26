@@ -1,0 +1,28 @@
+C:\Users\Zarrelli\AppData\Local\Temporary Projects\livestreamer.NET\bin\Debug\livestreamer.NET.exe.config
+C:\Users\Zarrelli\AppData\Local\Temporary Projects\livestreamer.NET\bin\Debug\livestreamer.NET.exe
+C:\Users\Zarrelli\AppData\Local\Temporary Projects\livestreamer.NET\bin\Debug\livestreamer.NET.pdb
+C:\Users\Zarrelli\AppData\Local\Temporary Projects\livestreamer.NET\obj\Debug\MainWindow.baml
+C:\Users\Zarrelli\AppData\Local\Temporary Projects\livestreamer.NET\obj\Debug\MainWindow.g.cs
+C:\Users\Zarrelli\AppData\Local\Temporary Projects\livestreamer.NET\obj\Debug\App.g.cs
+C:\Users\Zarrelli\AppData\Local\Temporary Projects\livestreamer.NET\obj\Debug\livestreamer.NET_MarkupCompile.cache
+C:\Users\Zarrelli\AppData\Local\Temporary Projects\livestreamer.NET\obj\Debug\livestreamer.NET.g.resources
+C:\Users\Zarrelli\AppData\Local\Temporary Projects\livestreamer.NET\obj\Debug\livestreamer.NET.Properties.Resources.resources
+C:\Users\Zarrelli\AppData\Local\Temporary Projects\livestreamer.NET\obj\Debug\livestreamer.NET.csproj.GenerateResource.Cache
+C:\Users\Zarrelli\AppData\Local\Temporary Projects\livestreamer.NET\obj\Debug\livestreamer.NET.exe
+C:\Users\Zarrelli\AppData\Local\Temporary Projects\livestreamer.NET\obj\Debug\livestreamer.NET.pdb
+C:\Users\Zarrelli\AppData\Local\Temporary Projects\livestreamer.NET\obj\Debug\livestreamer.NET.csprojResolveAssemblyReference.cache
+C:\Users\Zarrelli\Documents\Visual Studio 2012\Projects\livestreamer.NET\livestreamer.NET\bin\Debug\livestreamer.NET.exe.config
+C:\Users\Zarrelli\Documents\Visual Studio 2012\Projects\livestreamer.NET\livestreamer.NET\obj\Debug\livestreamer.NET.exe
+C:\Users\Zarrelli\Documents\Visual Studio 2012\Projects\livestreamer.NET\livestreamer.NET\obj\Debug\livestreamer.NET.pdb
+C:\Users\Zarrelli\Documents\Visual Studio 2012\Projects\livestreamer.NET\livestreamer.NET\bin\Debug\livestreamer.NET.exe
+C:\Users\Zarrelli\Documents\Visual Studio 2012\Projects\livestreamer.NET\livestreamer.NET\bin\Debug\livestreamer.NET.pdb
+C:\Users\Zarrelli\Documents\Visual Studio 2012\Projects\livestreamer.NET\livestreamer.NET\obj\Debug\livestreamer.NET.csprojResolveAssemblyReference.cache
+C:\Users\Zarrelli\Documents\Visual Studio 2012\Projects\livestreamer.NET\livestreamer.NET\obj\Debug\MainWindow.baml
+C:\Users\Zarrelli\Documents\Visual Studio 2012\Projects\livestreamer.NET\livestreamer.NET\obj\Debug\MainWindow.g.cs
+C:\Users\Zarrelli\Documents\Visual Studio 2012\Projects\livestreamer.NET\livestreamer.NET\obj\Debug\App.g.cs
+C:\Users\Zarrelli\Documents\Visual Studio 2012\Projects\livestreamer.NET\livestreamer.NET\obj\Debug\livestreamer.NET_MarkupCompile.cache
+C:\Users\Zarrelli\Documents\Visual Studio 2012\Projects\livestreamer.NET\livestreamer.NET\obj\Debug\livestreamer.NET.g.resources
+C:\Users\Zarrelli\Documents\Visual Studio 2012\Projects\livestreamer.NET\livestreamer.NET\obj\Debug\livestreamer.NET.Properties.Resources.resources
+C:\Users\Zarrelli\Documents\Visual Studio 2012\Projects\livestreamer.NET\livestreamer.NET\obj\Debug\livestreamer.NET.csproj.GenerateResource.Cache
+C:\Users\Zarrelli\Documents\Visual Studio 2012\Projects\livestreamer.NET\livestreamer.NET\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Zarrelli\Documents\Visual Studio 2012\Projects\livestreamer.NET\livestreamer.NET\obj\Debug\livestreamer.NET_MarkupCompile.lref
