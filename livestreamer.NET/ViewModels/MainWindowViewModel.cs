@@ -6,6 +6,7 @@
     using System.Collections.ObjectModel;
     using System.Diagnostics;
     using System.IO;
+    using System.Text;
     using System.Windows.Input;
     using Commands;
     using Configuration;
@@ -32,6 +33,7 @@
             _openChat = Configuration.SelectedChatOption;
             History = Configuration.History;
             Watch = new RelayCommand(OnWatch, canExecute => !String.IsNullOrWhiteSpace(Stream));
+            ClearHistory = new RelayCommand(OnClearHistory, canExecute => true);
         }
 
         private Config Configuration { get; set; }
@@ -76,9 +78,24 @@
             }
         }
 
+        private String _console;
+
+        public String Console
+        {
+            get { return _console; }
+            set
+            {
+                _console = value;
+                OnPropertyChanged("Console");
+            }
+        }
+
         public String Stream { get; set; }
 
         public ICommand Watch { get; private set; }
+
+        public ICommand ClearHistory { get; private set; }
+
 
         private void OnWatch(object parameter)
         {
@@ -93,7 +110,14 @@
                                 UseShellExecute = false
                             }
                 };
+            var output = new StringBuilder();
+            cmd.OutputDataReceived += (sender, args) =>
+                {
+                    output.AppendLine(args.Data);
+                    Console = output.ToString();
+                };
             cmd.Start();
+            cmd.BeginOutputReadLine();
             if (OpenChat)
             {
                 new Process
@@ -101,13 +125,18 @@
                         StartInfo =
                             new ProcessStartInfo("http://www.twitch.tv/chat/embed?channel=" + Stream +
                                                  "&popout_chat=true")
-                                {
-                                    WindowStyle = ProcessWindowStyle.Normal
-                                }
                     }.Start();
             }
             if (History.Contains(Stream)) return;
             History.Add(Stream);
+            Configuration.History = History;
+            ConfigHelper.SaveConfig<Config>(Configuration);
+            cmd.WaitForExit();
+        }
+
+        private void OnClearHistory(object parameter)
+        {
+            History.Clear();
             Configuration.History = History;
             ConfigHelper.SaveConfig<Config>(Configuration);
         }

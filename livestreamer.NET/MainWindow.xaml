@@ -53,13 +53,12 @@
             <Setter Property="Width" Value="150" />
             <Setter Property="UseLayoutRounding" Value="True" />
         </Style>
-        <Style TargetType="{x:Type Button}">
+        <Style x:Key="PlayButton" TargetType="{x:Type Button}">
             <Setter Property="Background" Value="#FF66A3D2" />
             <Setter Property="Foreground" Value="White" />
             <Setter Property="FontSize" Value="15" />
             <Setter Property="FontFamily" Value="./#Segoe UI" />
             <Setter Property="SnapsToDevicePixels" Value="True" />
-
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
@@ -73,12 +72,44 @@
                                                   Margin="0,0,0,0" />
                             </Grid>
                         </Border>
-
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
                                 <Setter Property="Background" Value="#E59400" />
                                 <Setter Property="Foreground" Value="White" />
                                 <Setter TargetName="PathIcon" Property="Fill" Value="Black" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="#626262"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="OrangeRed"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="NormalButton" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#FF66A3D2" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="FontFamily" Value="./#Segoe UI" />
+            <Setter Property="SnapsToDevicePixels" Value="True" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}">
+                            <Grid>
+                                <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}"
+                                                  HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                  Margin="0,0,0,0" />
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#E59400" />
+                                <Setter Property="Foreground" Value="White" />
                             </Trigger>
                             <Trigger Property="IsEnabled" Value="False">
                                 <Setter Property="Background" Value="#626262"/>
@@ -106,7 +137,7 @@
                             <KeyBinding Key="Enter" Command="{Binding Watch}"/>
                         </ComboBox.InputBindings>
                     </ComboBox>
-                    <Button Height="50" Margin="10,0,10,0" Command="{Binding Watch}">
+                    <Button Style="{StaticResource PlayButton}" Height="50" Margin="10,0,10,0" Command="{Binding Watch}">
                         <Button.Content>
                             <StackPanel>
                                 <TextBlock Text="Watch Now" FontSize="20" />
@@ -123,10 +154,20 @@
                         <TextBlock Text="Settings" FontSize="24" Margin="4" Foreground="#008000" />
                     </Border>
                     <DockPanel Margin="10,10,10,5">
-                        <TextBlock Text="Available streams:"/>
-                        <ComboBox ItemsSource="{Binding QualityOptions}" SelectedItem="{Binding SelectedQualityOption}" Margin="10,-2.5,0,-2.5" />
+                        <TextBlock Margin="0,2.5,0,0" Text="Available streams:"/>
+                        <ComboBox ItemsSource="{Binding QualityOptions}" SelectedItem="{Binding SelectedQualityOption}" Margin="10,0,0,0" />
                     </DockPanel>
-                    <CheckBox Margin="10,0,10,5" Content="Chat" IsChecked="{Binding OpenChat}"/>
+                    <CheckBox Margin="10,0,10,0" Content="Chat" IsChecked="{Binding OpenChat}"/>
+                    <Button Style="{StaticResource NormalButton}" Command="{Binding ClearHistory}" Margin="10,10,10,0" Height="30" Content="Clear History"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Console">
+                <StackPanel>
+                    <Border VerticalAlignment="Top" HorizontalAlignment="Left" Margin="2,2,0,0"
+                            BorderThickness="0,0,0,1" BorderBrush="#B5B5B7">
+                        <TextBlock Text="Console" FontSize="24" Margin="4" Foreground="#008000" />
+                    </Border>
+                    <TextBox Text="{Binding Console}"  Margin="10,10,10,0" Height="80" />
                 </StackPanel>
             </TabItem>
         </TabControl>

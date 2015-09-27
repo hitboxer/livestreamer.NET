@@ -1,0 +1,15 @@
+C:\Users\Zarrelli\Documents\GitHub\livestreamer.NET\livestreamer.NET\bin\Release\livestreamer.NET.exe.config
+C:\Users\Zarrelli\Documents\GitHub\livestreamer.NET\livestreamer.NET\bin\Release\livestreamer.NET.exe
+C:\Users\Zarrelli\Documents\GitHub\livestreamer.NET\livestreamer.NET\bin\Release\livestreamer.NET.pdb
+C:\Users\Zarrelli\Documents\GitHub\livestreamer.NET\livestreamer.NET\obj\Release\MainWindow.g.cs
+C:\Users\Zarrelli\Documents\GitHub\livestreamer.NET\livestreamer.NET\obj\Release\App.g.cs
+C:\Users\Zarrelli\Documents\GitHub\livestreamer.NET\livestreamer.NET\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\Zarrelli\Documents\GitHub\livestreamer.NET\livestreamer.NET\obj\Release\livestreamer.NET_MarkupCompile.cache
+C:\Users\Zarrelli\Documents\GitHub\livestreamer.NET\livestreamer.NET\obj\Release\livestreamer.NET_MarkupCompile.lref
+C:\Users\Zarrelli\Documents\GitHub\livestreamer.NET\livestreamer.NET\obj\Release\MainWindow.baml
+C:\Users\Zarrelli\Documents\GitHub\livestreamer.NET\livestreamer.NET\obj\Release\livestreamer.NET.g.resources
+C:\Users\Zarrelli\Documents\GitHub\livestreamer.NET\livestreamer.NET\obj\Release\livestreamer.NET.Properties.Resources.resources
+C:\Users\Zarrelli\Documents\GitHub\livestreamer.NET\livestreamer.NET\obj\Release\livestreamer.NET.csproj.GenerateResource.Cache
+C:\Users\Zarrelli\Documents\GitHub\livestreamer.NET\livestreamer.NET\obj\Release\livestreamer.NET.exe
+C:\Users\Zarrelli\Documents\GitHub\livestreamer.NET\livestreamer.NET\obj\Release\livestreamer.NET.pdb
+C:\Users\Zarrelli\Documents\GitHub\livestreamer.NET\livestreamer.NET\obj\Release\livestreamer.NET.csprojResolveAssemblyReference.cache
